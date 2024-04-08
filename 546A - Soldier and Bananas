@@ -1,0 +1,29 @@
+#include <iostream>
+using namespace std;
+ 
+int main() {
+ 
+    int a, b, c, sum = 0;
+ 
+    cin >> a >> b >> c;
+ 
+    for(int i = 1; i <= c; i++) {
+        sum += i;
+    }
+ 
+    int totalCost = a * sum;
+ 
+ 
+    if(totalCost < 0) {
+ 
+        cout << "0";
+    } else {
+ 
+        int borrowed = totalCost - b;
+        
+        
+        cout << (borrowed < 0 ? 0 : borrowed);
+    }
+ 
+    return 0;
+}
