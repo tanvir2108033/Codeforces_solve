@@ -1,0 +1,39 @@
+#include <iostream>
+using namespace std;
+ 
+int main()
+{
+	long long j, i = 0, a = 0;
+	string s, t, z;
+	cin >> s >> t;
+	j = t.size();
+	z.resize(t.size());
+	while (i < t.size() && j >= 0)
+	{
+		z[i] = t[j-1];
+		i++;
+		j--;
+	}
+	//cout << z << " " << t << endl;
+	if (s.size() == t.size())
+	{
+		for (i = 0; i < s.size(); i++)
+		{
+			if (s[i] == z[i])
+			{
+				a = 1;
+			}
+			else
+			{	a = 0;
+				break;
+			}
+		}
+	}
+	if (a == 1)
+	{
+		cout << "YES" << endl;
+	}
+	else
+		cout << "NO" << endl;
+	return 0;
+}
