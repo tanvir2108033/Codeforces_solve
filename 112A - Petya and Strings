@@ -1,0 +1,36 @@
+#include <iostream>
+using namespace std;
+int main() {
+    string s1 , s2 ;
+    //char t1 , t2;
+    int i, n , c = 0;
+    cin >> s1 >> s2;
+    if( s1.length() == s2.length() )
+    {
+        
+        n = s1.length() ;
+        for( i = 0 ; i < n ; i++)
+        {
+            char t1 = tolower(s1[i]);
+            char t2 = tolower(s2[i]);
+            if(t1 != t2)
+            {
+                if( t1 > t2)
+                {
+                    c = 1;
+                    break;
+                }
+                else if ( t1 < t2 )
+                {
+                    c = -1;
+                    break;
+                }
+            }
+        }
+    }
+        
+        
+        cout<< "\n" << c;
+    
+    return 0;
+}
