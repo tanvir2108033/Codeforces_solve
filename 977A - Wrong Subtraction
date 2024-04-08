@@ -1,0 +1,20 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+	int num, t ,i;
+	cin>>num>>t;
+	for(i=1;i<=t;i++)
+	{
+		if(num %10 != 0)
+		{
+			num= num - 1;
+		}
+		else
+		{
+			num =num/10;
+		}
+	}
+	cout<<num;
+	return 0;
+}
