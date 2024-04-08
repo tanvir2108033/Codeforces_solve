@@ -1,0 +1,27 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+    long long n;
+	int a, c=0 ,i=0;
+	cin>>n;
+	for(n ; n>0 ; n/=10)
+	{
+		a=n%10;
+		if(a == 4 || a == 7 )
+		{
+			
+			i++;
+		}
+		
+	}
+	
+		if(i == 4 || i == 7)
+		{
+			cout<<"YES"<<endl;
+		}
+	
+	else
+	cout<<"NO"<<endl;
+	return 0;
+}
