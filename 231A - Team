@@ -1,0 +1,28 @@
+#include <iostream>
+using namespace std;
+int main() {
+    int n, i, j, arr[3], cnt = 0, ac =0;
+    cin>>n;
+    for(i = 0; i < n; i++)
+    {
+        for(j = 0 ; j< 3 ; j++)
+        {
+            cin>>arr[j];
+        }
+        for(j = 0 ; j< 3 ; j++)
+        {
+            if(arr[j] == 1)
+            {
+                cnt++;
+            }
+        }
+        if(cnt>=2)
+        {
+            ac++;
+        }
+        cnt =0;
+    }
+    cout<<ac<<endl;
+ 
+    return 0;
+}
